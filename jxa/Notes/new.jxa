@@ -1,0 +1,7 @@
+let app = Application('Notes');
+const title = (new Date()).toLocaleString();
+
+let NoteFolder = app.folders.byName('Notes')
+let note = NoteFolder.make({ new: 'note', withProperties: { name: title } });
+note.show({ separately: true });
+app.activate();

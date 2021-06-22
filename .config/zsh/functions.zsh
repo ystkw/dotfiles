@@ -13,6 +13,10 @@ function show(){
   osascript -l JavaScript ~/jxa_scripts/open_finder.js $DIR
 }
 
+memo () {
+  osascript -l JavaScript ~/dotfiles/jxa/Notes/new.jxa
+}
+
 mkcd () {
   mkdir "$1"
   cd "$1"
