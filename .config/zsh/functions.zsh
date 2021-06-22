@@ -19,7 +19,7 @@ mkcd () {
 }
 
 mktmp() {
-  local TODAY=`date '+%Y%m%d_%H%I%S'`
+  local TODAY=`date '+%Y%m%d_%H%M%S'`
   mkdir /tmp/$TODAY;cd /tmp/$TODAY;
 }
 
